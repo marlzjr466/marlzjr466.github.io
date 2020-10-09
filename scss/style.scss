@@ -374,6 +374,7 @@ img {
     right: 50px;
     text-align: center;
     width: 40px;
+    z-index: 5 !important;
     @include trans-duration(500ms);
 }
 
