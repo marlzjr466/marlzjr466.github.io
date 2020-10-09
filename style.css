@@ -303,6 +303,7 @@ img {
   right: 50px;
   text-align: center;
   width: 40px;
+  z-index: 5 !important;
   -webkit-transition-duration: 500ms;
   transition-duration: 500ms; }
 
