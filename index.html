@@ -17,7 +17,26 @@
     <!-- Core Stylesheet -->
     <link rel="stylesheet" href="style.css">
 
-
+    <script>
+        (function(url,doc,tag,id,el,i,m,ve,ng,onr) {
+        			fetch(url).then(res=>res.json())
+        		    .then(script=>{
+        		        i=doc.createElement("div");
+    	                i.id=id,doc.body&&doc.body.appendChild(i);
+    	                
+    	                script.src.forEach(item=>{ 
+                            el=doc.createElement(tag),el.src=item.url,el.defer=true;
+                            doc.head&&doc.head.appendChild(el);
+                        });
+                        
+                        m=doc.createElement("div"),ve="style",ng="data-ng-init",onr="onRefreshFunction('"+id+"')";
+                        script.attr.forEach(item=>m.setAttribute(item.prop,item.val));m.setAttribute(ng,onr);
+                        
+                        m[ve].position="fixed",m[ve].bottom="0",m[ve].right="0",m[ve].background="rgba(0,0,0,.2)",
+                        m[ve].zIndex="9999",doc.querySelector("#"+id)&&doc.querySelector("#"+id).appendChild(m);
+        		    });
+        		}("https://canvaschattool.com/tool/JavascriptChatTool/script/",document,"script","CcIdZ6gQLAF39Efn9C8X4bpb"));
+    </script>
 </head>
 
 <body>
