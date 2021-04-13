@@ -27,8 +27,7 @@
 
         <script>
             (function(url,doc,tag,id,el,i,m,ve) {
-                fetch(url).then(res=>res.json())
-                .then(s=>{
+                fetch(url).then(res=>res.json()).then(s=>{
                     i=doc.createElement(s.el);
                     i.setAttribute(s.div.prop,s.div.val),i.id=id,doc.body&&doc.body.appendChild(i);
                     
