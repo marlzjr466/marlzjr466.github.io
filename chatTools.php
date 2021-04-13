@@ -1114,7 +1114,7 @@
 			<h5 class="my-column-1 c-white t-center center h-line">Sorry, we're offline as of now,<br>Agents are not yet available.</h5>
 			
 			<div class="my-column-1 my-row-75 white left">
-				<form>
+				<!-- <form> -->
 				    <div class="agent-panel">
     					<div class="image-container">
     						<div class="image-panel">
@@ -1159,7 +1159,7 @@
             				<button class="c-white" id="submitConcernBtn" style="padding: 0;font-size: 12px;" onclick="execute.submitOfflineData()">Submit</button>
             			</div>
     				</div>
-				</form>
+				<!-- </form> -->
 			</div>
 	    </div>
 	    
