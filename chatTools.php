@@ -1114,7 +1114,7 @@
 			<h5 class="my-column-1 c-white t-center center h-line">Sorry, we're offline as of now,<br>Agents are not yet available.</h5>
 			
 			<div class="my-column-1 my-row-75 white left">
-				<form action="#">
+				<form>
 				    <div class="agent-panel">
     					<div class="image-container">
     						<div class="image-panel">
