@@ -916,7 +916,7 @@
 	height: var(--closePopup-height);
 	position: relative;
 	background: rgba(0,0,0,.2);
-	margin-top: -100%;
+	margin-top: -215%;
 	float: left;
 	display: none;
 } .end-chat-popup #panel, .end-chat-listener #panel {
