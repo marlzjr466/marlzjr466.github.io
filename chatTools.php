@@ -1114,7 +1114,7 @@
 			<h5 class="my-column-1 c-white t-center center h-line">Sorry, we're offline as of now,<br>Agents are not yet available.</h5>
 			
 			<div class="my-column-1 my-row-75 white left">
-				<form action="#" onsubmit="execute.submitOfflineData()">
+				<form action="#">
 				    <div class="agent-panel">
     					<div class="image-container">
     						<div class="image-panel">
@@ -1156,7 +1156,7 @@
     					</div>
     					
     					<div class="send-message-container2">
-            				<button type="submit" class="c-white" id="submitConcernBtn" style="padding: 0;font-size: 12px;">Submit</button>
+            				<button type="submit" class="c-white" id="submitConcernBtn" style="padding: 0;font-size: 12px;" onclick="execute.submitOfflineData()">Submit</button>
             			</div>
     				</div>
 				</form>
