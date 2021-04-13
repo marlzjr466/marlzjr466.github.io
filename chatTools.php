@@ -913,7 +913,7 @@
 
  .end-chat-popup, .end-chat-listener {
 	width: 100%;
-	height: 120%;
+	height: var(--closePopup-height);
 	position: relative;
 	background: rgba(0,0,0,.2);
 	margin-top: var(--closePopup-marginTop);
@@ -1068,6 +1068,7 @@
 
 .activeIndicator {
     position: relative; width: 12px; height: 12px; border-radius: 50%; background: #00C172; float: right; margin: -15px 3px 0 0;
+	display: none;
 }
 
 .bar-activeIndicator {
