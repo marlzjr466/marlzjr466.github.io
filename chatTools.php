@@ -75,6 +75,8 @@
   --closePopup-p-padding: 25px 0 15px 0;
   --closePopup-button-padding: 3px 0;
   --closePopup-button-width: 50px;
+
+  --endChatListener2-marginTop: -215%;
   
   --endPopup-panel-padding: 10px 0 12px 0;
   --endPopup-p-margin: 0 0 10px 5%;
@@ -227,6 +229,8 @@
 	  --closePopup-p-padding: 20px 0 10px 0;
 	  --closePopup-button-padding: 2px 0;
 	  --closePopup-button-width: 50px;
+
+	  --endChatListener2-marginTop: -100vh;
 
 	  --animation-from-height: 0px;
 	  --animation-to-height: 500px;
@@ -916,7 +920,7 @@
 	height: var(--closePopup-height);
 	position: relative;
 	background: rgba(0,0,0,.2);
-	margin-top: -215%;
+	margin-top: var(--closePopup-marginTop);
 	float: left;
 	display: none;
 } .end-chat-popup #panel, .end-chat-listener #panel {
@@ -945,6 +949,43 @@
 } .end-chat-popup #panel button:hover, .end-chat-listener #panel button:hover {
 	background: #D4D4D4;
 } .end-chat-popup #panel button:active, .end-chat-listener #panel:active {
+	transform: scale(.95);
+}
+
+.end-chat-listener2 {
+	width: 100%;
+	height: var(--closePopup-height);
+	position: relative;
+	background: rgba(0,0,0,.2);
+	margin-top: var(--endChatListener2-marginTop);
+	float: left;
+	display: none;
+} .end-chat-listener2 #panel {
+	width: 80%;
+	padding: var(--endPopup-panel-padding);
+	background: #fff;
+	float: left;
+	margin: var(--closePopup-panel-margin);
+	box-shadow: 3px 3px 5px rgba(0,0,0,.2);
+	animation: closeChatPopup .5s;
+}  .end-chat-listener2 #panel p {
+	width: 90%;
+	font-size: var(--closePopup-fSize);
+	padding: 0;
+	float: left;
+	margin: var(--endPopup-p-margin);
+	text-indent: var(--endPopup-p-indent);
+	text-align: justify;
+} .end-chat-listener2 #panel button {
+	outline: none;
+	border: none;
+	font-size: var(--closePopup-fSize);
+	padding: var(--closePopup-button-padding);
+	width: var(--closePopup-button-width);
+	background: #f0f0f0;
+} .end-chat-listener2 #panel button:hover {
+	background: #D4D4D4;
+} .end-chat-listener2 #panel:active {
 	transform: scale(.95);
 }
 
@@ -1163,7 +1204,7 @@
 				<!-- </form> -->
 			</div>
 
-			<div class="end-chat-listener">
+			<div class="end-chat-listener2">
 				<div id="panel">
 					<p>Your concern is successfully submitted!</p>
 					<center>
