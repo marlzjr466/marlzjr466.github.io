@@ -1161,6 +1161,15 @@
     				</div>
 				<!-- </form> -->
 			</div>
+
+			<div class="end-chat-listener">
+				<div id="panel">
+					<p>Your concern is successfully submitted!</p>
+					<center>
+						<button onclick="execute.closeListener()">Close</button>
+					</center>
+				</div>
+			</div>
 	    </div>
 	    
 		<div class="chat-first-view">
