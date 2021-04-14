@@ -1271,10 +1271,10 @@
 				</div>
 
 				<div id="agent-container">
-					<img src="https://canvaschat-tool.com/chat-tool/avatar/avatar_2.png">
+					<img src="https://canvaschat-tool.com/chat-tool/avatar/avatar.png">
 					<div id="info">
-						<p>Nancy</p>
-						<label>Chat Professional</label>
+						<p>CanvasChat Bot</p>
+						<label>Assigning to an agent...</label>
 					</div>
 				</div>
 			</div>
