@@ -36,7 +36,6 @@ class SimpleRoute {
 class Route {
 	constructor(page, pageName) {
 		var div = document.querySelectorAll("div");
-		console.log(div.length)
 		sessionStorage.setItem('pagename', pageName);
 		window.history.pushState({}, `Custom JS - ${pageName}`, `?${pageName}`);
 		
