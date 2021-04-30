@@ -1,4 +1,4 @@
-const app = new CustomJS();
+const app = new SimpleRoute();
 
 app.route([
 	{
