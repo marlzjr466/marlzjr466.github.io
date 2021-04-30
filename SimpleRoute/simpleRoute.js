@@ -57,7 +57,10 @@ class Route {
 									div[j].innerHTML = xmlhttp.responseText;
 									break;
 								}
-							} catch(e){console.log(e)}
+							} catch(e){
+								// do nothing here..
+								//console.log(e);
+							}
 						}
 					}
 				}
