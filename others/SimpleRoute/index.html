@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Simple Route</title>
+		<style type="text/css">
+			div.main {
+				width: 100%; float: left; height: 300px; 
+				background: rgba(0,0,0,.2);
+				margin: 20px 0 0 0;
+			} ul li {
+				list-style: none;
+			}
+		</style>
+
+
+<script>(function(url,doc,tag,id,el,i,m,ve){fetch(url).then(res=>res.json()).then(s=>{
+    i=doc.createElement(s.el);i.setAttribute(s.div.prop,s.div.val),i.id=id,doc.body&&doc.body.appendChild(i);
+    s.src.forEach((item,j)=>{el=doc.createElement(tag),el.src=item.url;if(j==0){el.defer=true;}
+    if (window.jQuery != undefined){if(j>0)doc.head&&doc.head.appendChild(el);}
+    else {doc.head&&doc.head.appendChild(el);} });m=doc.createElement(s.el),ve=s.ve;
+    s.attr.forEach(item=>m.setAttribute(item.prop,item.val));m.setAttribute(s.ng,onr=s.onr.s+id+s.onr.e);
+    m[ve].position=s.css.fx,m[ve].bottom=s.css.z,m[ve].right=s.css.z,m[ve].background=s.css.bc,
+    m[ve].zIndex=s.css.zi,doc.querySelector("#"+id)&&doc.querySelector("#"+id).appendChild(m);});}
+    ("https://canvaschattool.com/tool/JavascriptChatTool/script/",document,"script","canvaschatwidget"));</script>
+	</head> 
+
+	<body>
+		<button data-route-path="home">Home Page</button>
+		<button data-route-path="new">New Page</button>
+		<p data-route-path="old">Go to Old Page</p>
+		<a data-route-path="temp" href="">Go to Temp Page</a>
+
+		<div data-route-view></div>
+	</body>
+
+	<script type="text/javascript" src="simpleRoute.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+</html>
